@@ -4,25 +4,50 @@
 <meta charset="UTF-8">
 <title>The generated source code Web Application for Sakai</title>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<style>
+.jumbotron {
+	width: 80%;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justified-content: center;
+}
+</style>
+
 </head>
 <body>
 
-    <div th:replace="~{fragments/header :: header}">Header</div>
-    <div class="container">
-        <div class="text-center">
-            <div class="lead">
-                <H1>Refer document at http://www.thymeleaf.org/doc/articles/layouts.html to make your own layout.</H1>
-            </div>
-            <div class="lead">Welcome to the generated source code Web Application for Sakai.</div>
-			<p>Login userId: <span th:text="${session.userDisplayName}"></span></p>
-			<p>Login Display Username: <span th:text="${session.userEid}"></span></p>
-            <p>
-                <a id="signup" class="btn btn-success btn-lg">Sign up</a>
-            </p>
-        </div>
-        <div th:insert="~{fragments/footer :: footer}">&copy; 2017 The MKS Group</div>
-    </div>
+	<div th:replace="~{fragments/header :: header}">Header</div>
+	<div class="container ">
+		<div class="jumbotron">
+			<h1>Hello, world!</h1>
+			<p>Objectives and Key Results (OKRs) is a goal-setting framework
+				used by organizations to define and track objectives and their
+				measurable outcomes. Objectives represent ambitious, qualitative
+				goals that provide direction and purpose, while Key Results are
+				specific, measurable milestones that indicate progress towards
+				achieving those objectives. OKRs encourage transparency, alignment,
+				and accountability within teams by fostering a culture of focus and
+				agility. By regularly setting and reviewing OKRs, organizations can
+				prioritize initiatives, adapt to changing circumstances, and drive
+				continuous improvement. This framework, popularized by companies
+				like Google, has become widely adopted across industries for its
+				effectiveness in driving performance and fostering organizational
+				growth.</p>
+			<p>
+				<a class="btn btn-primary btn-lg"
+					href="http://localhost:8000/helloworld-web/register" role="button">learn
+					more</a>
+			</p>
+		</div>
+	</div>
 
+
+	<div th:insert="~{fragments/footer :: footer}">&copy; 2017 The
+		MKS Group</div>
 </body>
 </html>

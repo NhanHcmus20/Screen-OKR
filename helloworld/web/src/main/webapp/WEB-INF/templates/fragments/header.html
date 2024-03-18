@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar" th:fragment="header">Header</nav>
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary"
+		th:fragment="header">
+		<ul class="nav nav-pills">
+			<li role="presentation" class="active"><a href="http://localhost:8000/helloworld-web/">Home</a></li>
+			<li role="presentation"><a href="http://localhost:8000/helloworld-web/register">Register</a></li>
+			<li role="presentation"><a href="http://localhost:8000/helloworld-web/inputOKR">Messages</a></li>
+		</ul>
+	</nav>
+
 </body>
 </html>
